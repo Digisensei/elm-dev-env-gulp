@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Ubuntu+Condensed')
+// Color Palette
+$yellow-green: #b0eb00
+$yellow-strong: #ffa928
+$corvette: #f3b987
+$light-coral : #ed7e86
+$cowboy: #413633
+$pale-chestnut: #e7a5ab
+$beaver: #927860
+$brown-bramble: #4f351f
+$hi-color: #ffffff
+$yellow-pale: #FAC960
+$body-bg: #fff
+$h-shadows: #EDD
+$popup-bg: #FFF
+
+@mixin add_shadow ($color)
+  text-shadow: 2px 2px $color
+
+
+body
+  background-color: $body-bg
+  font-family: 'Open Sans'
+  color: #000
+  font-size: 14px
+  line-height: 20px
+
+h1
+  margin: 10px 0px
+  color: $cowboy
+  font-size: 2em
+  line-height: 54px
+  font-style: normal
+  font-weight: 300
+  letter-spacing: 0px
+  text-shadow: 2px 2px $h-shadows
+
+h2
+  margin: 0px 0px 27px
+  color: $h-shadows
+  font-size: 38px
+  line-height: 36px
+  font-weight: 300
+  @include add_shadow($cowboy)
+
+.dark
+  color: $cowboy
+  text-shadow: none
+
+h3
+  margin: 5px 0px
+  font-size: 22px
+  line-height: 30px
+  font-weight: 400
+  text-shadow: none
+  padding-bottom: 20px
+
+.cont
+    text-align: center
+
+button
+    background: $corvette
+    border-radius: 20px
+    margin-bottom: 20px
+
+.icon
+  width: 50px
